@@ -36,7 +36,7 @@ model {
 }
 
 ext.appendDebugPathToBinaries = { binaries->
-    /*
+    
     binaries.withType(StaticLibraryBinarySpec) {
         if (it.buildType.name.contains('debug')) {
             def staticFileDir = it.staticLibraryFile.parentFile
@@ -68,7 +68,7 @@ ext.appendDebugPathToBinaries = { binaries->
             it.sharedLibraryFile = newSharedFile
         }
     }
-    */
+    
 }
 
 ext.createComponentZipTasks = { components, names, base, type, project, func ->
@@ -147,10 +147,10 @@ ext.includeStandardZipFormat = { task, value ->
     value.each { binary ->
         if (binary.buildable) {
             if (binary instanceof SharedLibraryBinarySpec) {
-                //task.dependsOn binary.tasks.link
-                //task.from(new File(binary.sharedLibraryFile.absolutePath + ".debug")) {
-                //    into nativeUtils.getPlatformPath(binary) + '/shared'
-                //}
+                task.dependsOn binary.tasks.link
+                task.from(new File(binary.sharedLibraryFile.absolutePath + ".debug")) {
+                    into nativeUtils.getPlatformPath(binary) + '/shared'
+                }
                 def sharedPath = binary.sharedLibraryFile.absolutePath
                 sharedPath = sharedPath.substring(0, sharedPath.length() - 4)
 

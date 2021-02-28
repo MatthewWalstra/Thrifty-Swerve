@@ -65,6 +65,10 @@ model {
       }
 
       nativeUtils.useRequiredLibrary(it, "wpilib_shared", "googletest_static")
+
+      wpi.deps.vendor.cpp(it)
+      wpi.deps.wpilib(it)
+      wpi.deps.googleTest(it)
     }
   }
   

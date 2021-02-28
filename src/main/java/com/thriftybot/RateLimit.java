@@ -1,4 +1,4 @@
-package org.strykeforce.thirdcoast.util;
+package com.thriftybot;
 
 /** Applies rate limit to joystick input. */
 public class RateLimit {

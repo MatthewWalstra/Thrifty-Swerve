@@ -1,4 +1,4 @@
-package org.strykeforce.thirdcoast.swerve;
+package com.thriftybot;
 
 import com.kauailabs.navx.frc.AHRS;
 import edu.wpi.first.wpilibj.Preferences;

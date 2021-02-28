@@ -27,14 +27,14 @@ apply from: 'dependencies.gradle'
 
 nativeUtils {
   exportsConfigs {
-      ColorSensorV3 {
+      ThriftySwerve {
       }
   }
 }
 
 model {
   components {
-    ColorSensorV3(NativeLibrarySpec) {
+    ThriftySwerve(NativeLibrarySpec) {
       sources {
         cpp {
           source {
@@ -55,8 +55,8 @@ model {
   }
 
   testSuites {
-    ColorSensorV3Test(GoogleTestTestSuiteSpec) {
-      testing $.components.ColorSensorV3
+    ThriftySwerveTest(GoogleTestTestSuiteSpec) {
+      testing $.components.ThriftySwerve
       sources.cpp {
         source {
           srcDir 'src/test/cpp'

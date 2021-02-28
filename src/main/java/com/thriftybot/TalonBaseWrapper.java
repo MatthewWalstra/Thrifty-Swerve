@@ -1,4 +1,4 @@
-package org.strykeforce.thirdcoast.swerve;
+package com.thriftybot;
 
 import com.ctre.phoenix.motorcontrol.ControlMode;
 import com.ctre.phoenix.motorcontrol.FeedbackDevice;

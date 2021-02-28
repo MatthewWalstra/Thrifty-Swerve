@@ -1,4 +1,4 @@
-package org.strykeforce.thirdcoast.util;
+package com.thriftybot;
 
 /** Applies exponential scaling and deadband to joystick inputs */
 public class ExpoScale {

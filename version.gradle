@@ -26,8 +26,8 @@ def vendordepsdir = rootProject.projectDir.toString() + "/build/vendordeps"
 // Add the correct version number to the template JSON file and place it in the vendordeps folder to be zipped
 task updateVendorDeps {
     mkdir vendordepsdir
-    def newJSON = new File(vendordepsdir + "/REVColorSensorV3.json")
-    def templateJSON = new File(rootProject.projectDir.toString() + "/REVColorSensorV3_template.json")
+    def newJSON = new File(vendordepsdir + "/ThriftySwerve.json")
+    def templateJSON = new File(rootProject.projectDir.toString() + "/ThriftySwerve_template.json")
 
     newJSON.withWriter { def writer ->
         templateJSON.eachLine { def line ->

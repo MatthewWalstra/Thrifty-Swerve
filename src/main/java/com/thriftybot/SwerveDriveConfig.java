@@ -1,10 +1,10 @@
-package org.strykeforce.thirdcoast.swerve;
+package com.thriftybot;
 
 import com.kauailabs.navx.frc.AHRS;
 import edu.wpi.first.wpilibj.TimedRobot;
-import org.strykeforce.thirdcoast.swerve.MotorControllerConfig.AzimuthMotorController;
-import org.strykeforce.thirdcoast.swerve.MotorControllerConfig.DriveMotorController;
-import org.strykeforce.thirdcoast.swerve.MotorControllerConfig.FeedbackSensor;
+import com.thriftybot.MotorControllerConfig.AzimuthMotorController;
+import com.thriftybot.MotorControllerConfig.DriveMotorController;
+import com.thriftybot.MotorControllerConfig.FeedbackSensor;
 
 public class SwerveDriveConfig {
 

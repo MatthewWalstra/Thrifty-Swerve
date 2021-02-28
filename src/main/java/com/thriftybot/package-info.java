@@ -3,4 +3,4 @@
  *
  * @author 2767 Stryke Force
  */
-package org.strykeforce.thirdcoast.swerve;
+package com.thriftybot;

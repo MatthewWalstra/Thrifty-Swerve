@@ -1,4 +1,4 @@
-package org.strykeforce.thirdcoast.swerve;
+package com.thriftybot;
 
 public class MotorControllerConfig {
   /**

@@ -1,4 +1,4 @@
-package org.strykeforce.thirdcoast.swerve;
+package com.thriftybot;
 
 public class PIDFSlot {
   public double kP, kI, kD, kF, kIZone, kAllowableError, kMaxIAccum = 0.0;

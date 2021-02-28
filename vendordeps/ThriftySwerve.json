@@ -1,0 +1,38 @@
+{
+    "fileName": "ThriftySwerve.json",
+    "name": "ThriftySwerve",
+    "version": "1.0.0",
+    "uuid": "4500ff8c-3bf7-4f32-b3d4-ae07e3419b3d",
+    "mavenUrls": [
+        //"http://www.revrobotics.com/content/sw/color-sensor-v3/sdk/maven/"
+    ],
+    "jsonUrl": //"http://www.revrobotics.com/content/sw/color-sensor-v3/sdk/REVColorSensorV3.json",
+    ,
+    "javaDependencies": [
+        {
+            "groupId": "com.thriftybot.frc",
+            "artifactId": "ThriftySwerve-java",
+            "version": "1.0.0"
+        }
+    ],
+    "jniDependencies": [],
+    "cppDependencies": [
+        {
+            "groupId": "com.thriftybot.frc",
+            "artifactId": "ThriftySwerve-cpp",
+            "version": "1.0.0",
+            "libName": "ThriftySwerve",
+            "headerClassifier": "headers",
+            "sourcesClassifier": "source",
+            "sharedLibrary": true,
+            "skipInvalidPlatforms": true,
+            "binaryPlatforms": [
+                "windowsx86-64",
+                "windowsx86",
+                "linuxx86-64",
+                "linuxathena",
+                "linuxraspbian"
+            ]
+        }
+    ]
+}

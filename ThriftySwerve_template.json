@@ -23,7 +23,7 @@
             "libName": "ThriftySwerve",
             "headerClassifier": "headers",
             "sourcesClassifier": "source",
-            "sharedLibrary": false,
+            "sharedLibrary": true,
             "skipInvalidPlatforms": true,
             "binaryPlatforms": [
                 "windowsx86-64",
